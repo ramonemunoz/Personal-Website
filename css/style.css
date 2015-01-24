@@ -6,6 +6,18 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
+@font-face {
+    font-family: 'bonvenocflight';
+    src: url('fonts/bonvenocf-light-webfont.eot');
+    src: url('fonts/bonvenocf-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bonvenocf-light-webfont.woff2') format('woff2'),
+         url('fonts/bonvenocf-light-webfont.woff') format('woff'),
+         url('fonts/bonvenocf-light-webfont.ttf') format('truetype'),
+         url('fonts/bonvenocf-light-webfont.svg#bonvenocflight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* Basic */
 
 	body, input, select, textarea {
@@ -50,6 +62,7 @@
 
 	.icon {
 		position: relative;
+		color: #000;
 	}
 
 		.icon:before {
@@ -105,7 +118,8 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		/* Set your background with this */
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		/*background: #348cb2 url("images/bg.jpg") bottom left;*/
+		background-color: #fff;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -210,9 +224,12 @@
 
 		#header h1 {
 			font-size: 4.35em;
-			font-weight: 900;
+			/*font-weight: 900;*/
+			font-weight: 100;
 			letter-spacing: -0.035em;
 			line-height: 1em;
+			color: #000;
+			font-family: bonvenocflight;
 		}
 
 		#header p {
@@ -344,7 +361,8 @@
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px white;
+					/*border: solid 1px white;*/
+					border: solid 1px black;
 					display: block;
 					font-size: 1.75em;
 					height: 2.5em;
@@ -361,7 +379,7 @@
 
 					#header nav a:hover:before {
 						background-color: rgba(255, 255, 255, 0.175);
-						color: white;
+						/*color: white;*/
 					}
 
 				#header nav a:active {
@@ -381,11 +399,11 @@
 /* Footer */
 
 	#footer {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		/*/background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
 		bottom: 0;
 		cursor: default;
 		height: 6em;
@@ -394,4 +412,9 @@
 		position: absolute;
 		text-align: center;
 		width: 100%;
+		color: #000;
+	}
+
+	.copyright {
+		font-family: bonvenocflight;
 	}
