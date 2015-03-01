@@ -6,7 +6,7 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
-
+/*  Fonts  */
 @font-face {
     font-family: 'bonvenocflight';
     src: url('fonts/bonvenocf-light-webfont.eot');
@@ -19,6 +19,8 @@
     font-style: normal;
 
 }
+
+
 /* Basic */
 
 	body, input, select, textarea {
@@ -752,7 +754,7 @@ html, body {
   font-weight: 700;
   font-size: 14px;
   font-size: 0.875rem;
-  margin: 2.4em 0 .8em;
+  margin: 1.5em 0 .8em;
 }
 .cd-primary-nav .cd-social {
   display: inline-block;
@@ -857,4 +859,24 @@ html, body {
     font-size: 20px;
     font-size: 1.25rem;
   }
+}
+
+/*Animation*/
+
+#animation {
+	-moz-animation: header .5s .25s forwards;
+	-webkit-animation: header .5s .25s forwards;
+	-o-animation: header .5s .25s forwards;
+	-ms-animation: header .5s .25s forwards;
+	animation: header .5s .25s forwards;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
