@@ -78,8 +78,8 @@ body{
 }
 
 .wrapper{
-    width: 1100px;
-    margin: 0 auto;
+   width: 1100px;
+   margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 ,h6{
@@ -247,7 +247,7 @@ header ul li .current{
 /*  titles  */
 .page_title{
     width: 100%;
-    padding: 25px 0 0 0;
+    padding: 50px 0 0 0;
     background: #fdfcfc;
     text-align: center;
 }
@@ -1036,7 +1036,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(2, 23, 37, 0.95);
+  background: rgba(160, 160, 160, 0.95);
   height: 50px;
   width: 100%;
   z-index: 3;
@@ -1144,7 +1144,7 @@ html, body {
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: #03263d;
+  background-color: #747474;
 }
 .cd-primary-nav-trigger .cd-menu-text {
   /*color: white;*/
@@ -1405,5 +1405,77 @@ html, body {
     font-size: 20px;
     font-size: 1.25rem;
   }
+}
+
+/*iPhone portrait*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .wrapper {
+        width: 100%;
+   
+    }
+
+    .contact_form .form .subject {
+        width: 100%;
+        
+    }
+    .contact_form .form {
+        width: 100%; 
+
+    }
+
+    .contact_form .form .msg {
+        max-width: 100%;
+        min-width: 100%;
+
+    }
+    .contact_form .form .email {
+        float: left;
+    
+    }
+
+    .contact_form .form .name,
+    .contact_form .form .email{
+        width: 100%;
+
+    }
+
+
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 736px) {
+
+    .wrapper {
+        width: 95%;
+   
+    }
+
+    .contact_form .form .subject {
+        width: 95%;
+        
+    }
+    .contact_form .form {
+        width: 95%; 
+
+    }
+
+    .contact_form .form .msg {
+        max-width: 95%;
+        min-width: 95%;
+
+    }
+    .contact_form .form .email {
+        float: left;
+    
+    }
+
+    .contact_form .form .name,
+    .contact_form .form .email{
+        width: 95%;
+
+    }
+
+
+
 }
 
