@@ -38,7 +38,7 @@
 			<li><a class="cd-label" href="index.html">Home</a></li>
 			<li class="cd-label">About Me</li>
 
-			<li><a class="menu-item" href="bio.html">Bio</a></li>
+			<li><a class="menu-item" href="#0">Bio</a></li>
 			<li><a class="menu-item" href="recent-work.html">Recent Work</a></li>
 			<li><a class="menu-item" href="contact.html">Contact Me</a></li>
 
@@ -83,14 +83,38 @@
 		<div class="wrapper">			
 			<h2 class="title">Send Me a Message</h2>
 			<div class="form">
-				<form action="mail.php" method="post">
-					<input type="text" id="name" name="first_name" placeholder="Name" class="name">
-					<input type="text" id="email" name="email" placeholder="Email" class="email">
-					<input type="text" id="subject" name="telephone" placeholder="Phone Number" class="subject">
-					<input type="text" id="subject" name="subject" placeholder="Subject" class="subject">
-					<textarea id="msg" name="comments" placeholder="Message" class="msg"></textarea>
-					<input type="submit" value="Send" id="send" class="submit"/>
-				</form>
+				<p>Required fields are <b>bold</b></p>
+
+<form action="mail2.php" method="post">
+<p><b>Your Name:</b> <input type="text" name="yourname" /><br />
+<b>Subject:</b> <input type="text" name="subject" /><br />
+<b>E-mail:</b> <input type="text" name="email" /><br />
+Website: <input type="text" name="website"></p>
+
+<p>Do you like this website?
+<input type="radio" name="likeit" value="Yes" checked="checked" /> Yes
+<input type="radio" name="likeit" value="No" /> No
+<input type="radio" name="likeit" value="Not sure" /> Not sure</p>
+
+<p>How did you find us?
+<select name="how">
+<option value=""> -- Please select -- </option>
+<option>Google</option>
+<option>Yahoo</option>
+<option>Link from a website</option>
+<option>Word of mouth</option>
+<option>Other</option>
+</select>
+
+<p><b>Your comments:</b><br />
+<textarea name="comments" rows="10" cols="40"></textarea></p>
+
+<p><input type="submit" value="Send it!"></p>
+
+<p> </p>
+<p>Powered by <a href="http://myphpform.com">PHP form</a></p>
+
+</form>
 			</div>
 		</div>
 	</section>

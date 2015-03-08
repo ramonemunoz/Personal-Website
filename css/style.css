@@ -24,7 +24,7 @@
 /* Basic */
 
 	body, input, select, textarea {
-		color: white;
+		color: #7f7f7f;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 17px;
 		font-weight: 300 !important;
@@ -425,6 +425,29 @@
 	.menu-item {
 		color: white;
 	}
+
+/*media queries for Smartphones (portrait )*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait)  {
+/* Styles */
+	
+	.me{
+		height: 210px;
+	}
+	
+}
+
+/* media queries for Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 667px) and (orientation : landscape)  {
+/* Styles */
+
+	.me{
+		display: none;
+	}
+
+	#header {
+		margin-top: 20px;
+	}
+}
 
 /* -------------------------------- 
 
