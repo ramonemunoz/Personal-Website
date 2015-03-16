@@ -34,7 +34,7 @@
 
 	body {
 		background: white;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 
 		body.loading * {
@@ -426,8 +426,18 @@
 		color: white;
 	}
 
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) { 
+	/* STYLES GO HERE */
+	.me{
+		height:100px;
+	}
+	
+}
+
+
 /*media queries for Smartphones (portrait )*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait)  {
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait)  {
 /* Styles */
 	
 	.me{
@@ -435,6 +445,8 @@
 	}
 	
 }
+
+
 
 /* media queries for Smartphones (landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 667px) and (orientation : landscape)  {
@@ -514,11 +526,11 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(160, 160, 160, 0.95);
+  /*background: rgba(160, 160, 160, 0.95);*/
   height: 50px;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

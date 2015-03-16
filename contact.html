@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact Me</title>
+	<title>Contact Me - Ramon E. Munoz</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<link rel="stylesheet" type="text/css" href="css/contact-reset.css">
@@ -25,6 +25,7 @@
 		</noscript>
 		
 </head>
+<body class="fade-in">
 	<header class="cd-header">
 		
 		<a class="cd-primary-nav-trigger" href="#0">
@@ -35,23 +36,22 @@
 	<nav>
 		<ul class="cd-primary-nav">
 
-			<li><a class="cd-label" href="index.html">Home</a></li>
-			<li class="cd-label">About Me</li>
+			<li><a class="cd-label" style="font-size:1.4em;" href="index.html">Home</a></li>
+			<li class="cd-label" style="font-size:1.4em;">About Me</li>	
+			<li style="font-size:1.3em;"><a class="menu-item" href="bio.html">Bio</a></li>
+			<li style="font-size:1.3em;"><a class="menu-item" href="recent-work.html">Recent Work</a></li>
+			<li style="font-size:1.3em;"><a class="menu-item" href="contact.html">Contact Me</a></li>
 
-			<li><a class="menu-item" href="bio.html">Bio</a></li>
-			<li><a class="menu-item" href="recent-work.html">Recent Work</a></li>
-			<li><a class="menu-item" href="contact.html">Contact Me</a></li>
-
-			<li class="cd-label">Projects</li>
+			<li class="cd-label" style="font-size:1.4em;">Projects</li>
 
 			
-			<li><a class="menu-item" href="resources.html">Resources</a></li>
-
+			<li style="font-size:1.4em;"><a class="menu-item" href="resources.html">Resources</a></li>
+		</ul>
 	</nav>
 
 
 
-<body>
+
 <div class="wrap gutter-10-xs gutter-out-xs">
 
 		<!--  stat page title  -->
@@ -83,10 +83,9 @@
 		<div class="wrapper">			
 			<h2 class="title">Send Me a Message</h2>
 			<div class="form">
-				<form action="mail.php" method="post">
-					<input type="text" id="name" name="first_name" placeholder="Name" class="name">
+				<form action="mail2.php" method="post">
+					<input type="text" id="name" name="yourname" placeholder="Name" class="name">
 					<input type="text" id="email" name="email" placeholder="Email" class="email">
-					<input type="text" id="subject" name="telephone" placeholder="Phone Number" class="subject">
 					<input type="text" id="subject" name="subject" placeholder="Subject" class="subject">
 					<textarea id="msg" name="comments" placeholder="Message" class="msg"></textarea>
 					<input type="submit" value="Send" id="send" class="submit"/>
@@ -99,5 +98,15 @@
 		
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 		 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 		 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 		 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ 		 ga('create', 'UA-60758079-1', 'auto');
+ 		 ga('send', 'pageview');
+	</script>
+
 	</body>
 </html>
